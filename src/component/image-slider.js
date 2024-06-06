@@ -8,151 +8,59 @@ class Slider extends HTMLElement {
     connectedCallback() {
         this.render(); 
         this.initSlider();
+        this.fetchData();
     }
 
     render() {
         this.shadowRoot.innerHTML = `
         <div class="slider-container">
             <div class="slider-content">
+
                 <div class="slider-single">
                     <img class="slider-single-image" src="https://picsum.photos/id/973/200/300" alt="1" />
                         <div class="slider-single-title">
-                            <div class="flex justify-between gap-15 m-5 mb-10">
-                                <div class="w-80 text-right p-3 font-semibold tracking-wide">
-                                    <h3 class="text-xl">Padar Island</h3>
-                                    <h2 class="text-xl mt-2"><span class="text-orange-600">Komodo Nasional Park</span></h2>
-                                    <h3 class="text-xl mt-2">Nusa Tenggara Timur</h3>
-                                </div>
-                                <div class="w-80 text-left p-3 tracking-wide overflow-hidden">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Sequi officia beatae nesciunt voluptatem totam voluptatibus quas accusamus ipsam! Aspernatur, laboriosam!
-                                    </p>
-                                </div>
-                            </div>
+                            <h2></h2>                           
+                            <p></p>
                         </div>
                 </div>
         
                 <div class="slider-single">
                     <img class="slider-single-image" src="https://picsum.photos/id/974/200/300" alt="2" />
-                        <div class="slider-single-title">
-                            <div class="flex justify-between gap-15 m-5 mb-10">
-                                <div class="w-80 text-right p-3 font-semibold tracking-wide">
-                                    <h3 class="text-xl">Padar Island</h3>
-                                    <h2 class="text-xl mt-2"><span class="text-orange-600">Komodo Nasional Park</span></h2>
-                                    <h3 class="text-xl mt-2">Nusa Tenggara Timur</h3>
-                                </div>
-                                <div class="w-80 text-left p-3 tracking-wide overflow-hidden">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Sequi officia beatae nesciunt voluptatem totam voluptatibus quas accusamus ipsam! Aspernatur, laboriosam!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="slider-single-title">                         
+                        <h2></h2>
+                        <p></p>
+                    </div>
                 </div>
         
                 <div class="slider-single">
                     <img class="slider-single-image" src="https://picsum.photos/id/975/200/300" alt="3" />
-                        <div class="slider-single-title">
-                            <div class="flex justify-between gap-15 m-5 mb-10">
-                                <div class="w-80 text-right p-3 font-semibold tracking-wide">
-                                    <h3 class="text-xl">Padar Island</h3>
-                                    <h2 class="text-xl mt-2"><span class="text-orange-600">Komodo Nasional Park</span></h2>
-                                    <h3 class="text-xl mt-2">Nusa Tenggara Timur</h3>
-                                </div>
-                                <div class="w-80 text-left p-3 tracking-wide overflow-hidden">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Sequi officia beatae nesciunt voluptatem totam voluptatibus quas accusamus ipsam! Aspernatur, laboriosam!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="slider-single-title">                         
+                        <h2></h2>
+                        <p></p>
+                    </div>
                 </div>
         
         
                 <div class="slider-single">
                     <img class="slider-single-image" src="https://picsum.photos/id/976/200/300" alt="4" />
-                        <div class="slider-single-title">
-                            <div class="flex justify-between gap-15 m-5 mb-10">
-                                <div class="w-80 text-right p-3 font-semibold tracking-wide">
-                                    <h3 class="text-xl">Padar Island</h3>
-                                    <h2 class="text-xl mt-2"><span class="text-orange-600">Komodo Nasional Park</span></h2>
-                                    <h3 class="text-xl mt-2">Nusa Tenggara Timur</h3>
-                                </div>
-                                <div class="w-80 text-left p-3 tracking-wide overflow-hidden">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Sequi officia beatae nesciunt voluptatem totam voluptatibus quas accusamus ipsam! Aspernatur, laboriosam!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="slider-single-title">                         
+                        <h2></h2>
+                        <p></p>
+                    </div>
                 </div>
         
         
                 <div class="slider-single">
                     <img class="slider-single-image" src="https://picsum.photos/id/977/200/300" alt="5" />
-                        <div class="slider-single-title">
-                            <div class="flex justify-between gap-15 m-5 mb-10">
-                                <div class="w-80 text-right p-3 font-semibold tracking-wide">
-                                    <h3 class="text-xl">Padar Island</h3>
-                                    <h2 class="text-xl mt-2"><span class="text-orange-600">Komodo Nasional Park</span></h2>
-                                    <h3 class="text-xl mt-2">Nusa Tenggara Timur</h3>
-                                </div>
-                                <div class="w-80 text-left p-3 tracking-wide overflow-hidden">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Sequi officia beatae nesciunt voluptatem totam voluptatibus quas accusamus ipsam! Aspernatur, laboriosam!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-        
-                <div class="slider-single">
-                    <img class="slider-single-image" src="https://picsum.photos/id/978/200/300" alt="6" />
-                        <div class="slider-single-title">
-                            <div class="flex justify-between gap-15 m-5 mb-10">
-                                <div class="w-80 text-right p-3 font-semibold tracking-wide">
-                                    <h3 class="text-xl">Padar Island</h3>
-                                    <h2 class="text-xl mt-2"><span class="text-orange-600">Komodo Nasional Park</span></h2>
-                                    <h3 class="text-xl mt-2">Nusa Tenggara Timur</h3>
-                                </div>
-                                <div class="w-80 text-left p-3 tracking-wide overflow-hidden">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Sequi officia beatae nesciunt voluptatem totam voluptatibus quas accusamus ipsam! Aspernatur, laboriosam!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="slider-single-title">                         
+                        <h2></h2>
+                        <p></p>
                     </div>
                 </div>
             </div>
         </div>
 
         <style>
-        
-            @keyframes heartbeat {
-                0% {
-                transform: scale(0);
-                }
-                25% {
-                transform: scale(1.2);
-                }
-                50% {
-                transform: scale(1);
-                }
-                75% {
-                transform: scale(1.2);
-                }
-                100% {
-                transform: scale(1);
-                }
-            }
-            
             .slider-container {
                 position: relative;
                 margin: 0 auto;
@@ -168,7 +76,7 @@ class Slider extends HTMLElement {
                 height: 60%;
                 transform: translate(-50%, -50%);
             }
-            .slider-container .slider-content .slider-single {
+            .slider-container .slider-single {
                 position: absolute;
                 z-index: 0;
                 left: 0;
@@ -177,7 +85,7 @@ class Slider extends HTMLElement {
                 height: 100%;
                 transition: z-index 0ms 250ms;
             }
-            .slider-container .slider-content .slider-single .slider-single-image {
+            .slider-container .slider-single-image {
                 position: relative;
                 left: 0;
                 top: 0;
@@ -187,123 +95,72 @@ class Slider extends HTMLElement {
                 transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
                 transform: scale(0);
                 opacity: 0;
-}
-            .slider-container .slider-content .slider-single .slider-single-download {
-                position: absolute;
-                display: block;
-                right: -22px;
-                bottom: 12px;
-                padding: 15px;
-                color: #333333;
-                background-color: #fdc84b;
-                font-size: 18px;
-                font-weight: 600;
-                font-family: "karla";
-                border-radius: 5px;
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-                transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
-                opacity: 0;
             }
-            .slider-container .slider-content .slider-single .slider-single-download:hover, .slider-container .slider-content .slider-single .slider-single-download:focus {
+            .slider-container .slider-single-download:hover, .slider-container .slider-single {
                 outline: none;
                 text-decoration: none;
             }
-            .slider-container .slider-content .slider-single .slider-single-title {
-
+            .slider-container .slider-single-title {
                 display: block;
                 float: left;
-                margin: 16px 0 0 20px;
                 padding: 20px;
+                height: 285px;
+                overflow: hidden;
                 font-size: 20px;
-                font-family: "karla";
                 font-weight: 400;
                 color: #000000;
                 transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
                 opacity: 0;
             }
-            .slider-container .slider-content .slider-single .slider-single-likes {
-                display: block;
-                float: right;
-                margin: 16px 20px 0 0;
-                transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
-                opacity: 0;
+            .slider-single-title h2 {
+                text-align: center;
+                font-weight: bold;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
-            .slider-container .slider-content .slider-single .slider-single-likes p {
-                display: inline-block;
-                vertical-align: middle;
-                margin: 0;
-                color: #000000;
+            .slider-single-title p {
+                text-align: justify;
             }
-            .slider-container .slider-content .slider-single .slider-single-likes:hover, .slider-container .slider-content .slider-single .slider-single-likes:focus {
+            .slider-container .slider-single {
                 outline: none;
                 text-decoration: none;
             }
-            .slider-container .slider-content .slider-single.preactivede .slider-single-image {
+            .slider-container .slider-single.preactivede .slider-single-image {
                 transform: translateX(-50%) scale(0);
             }
-            .slider-container .slider-content .slider-single.preactive {
+            .slider-container .slider-single.preactive {
                 z-index: 1;
             }
-            .slider-container .slider-content .slider-single.preactive .slider-single-image {
+            .slider-container .slider-single.preactive .slider-single-image {
                 opacity: 0.3;
                 transform: translateX(-25%) scale(0.8);
             }
-            .slider-container .slider-content .slider-single.preactive .slider-single-download {
+            .slider-container .slider-single.preactive .slider-single-title {
                 transform: translateX(-150px);
             }
-            .slider-container .slider-content .slider-single.preactive .slider-single-title {
-                transform: translateX(-150px);
-            }
-            .slider-container .slider-content .slider-single.preactive .slider-single-likes {
-                transform: translateX(-150px);
-            }
-            .slider-container .slider-content .slider-single.proactive {
+            .slider-container .slider-single.proactive {
                 z-index: 1;
             }
-            .slider-container .slider-content .slider-single.proactive .slider-single-image {
+            .slider-container .slider-single.proactive .slider-single-image {
                 opacity: 0.3;
                 transform: translateX(25%) scale(0.8);
             }
-            .slider-container .slider-content .slider-single.proactive .slider-single-download {
+            .slider-container .slider-single.proactive .slider-single-title {
                 transform: translateX(150px);
             }
-            .slider-container .slider-content .slider-single.proactive .slider-single-title {
-                transform: translateX(150px);
-            }
-            .slider-container .slider-content .slider-single.proactive .slider-single-likes {
-                transform: translateX(150px);
-            }
-            .slider-container .slider-content .slider-single.proactivede .slider-single-image {
+            .slider-container .slider-single.proactivede .slider-single-image {
                 transform: translateX(50%) scale(0);
             }
-            .slider-container .slider-content .slider-single.active {
+            .slider-container .slider-single.active {
                 z-index: 2;
             }
-            .slider-container .slider-content .slider-single.active .slider-single-image {
+            .slider-container .slider-single.active .slider-single-image {
                 opacity: 1;
                 transform: translateX(0%) scale(1);
             }
-            .slider-container .slider-content .slider-single.active .slider-single-download {
-                opacity: 1;
-                transition-delay: 100ms;
-                transform: translateX(0px);
-            }
-            .slider-container .slider-content .slider-single.active .slider-single-title {
+            .slider-container .slider-single.active .slider-single-title {
                 opacity: 1;
                 transition-delay: 200ms;
                 transform: translateX(0px);
-            }
-            .slider-container .slider-content .slider-single.active .slider-single-likes {
-                opacity: 1;
-                transition-delay: 300ms;
-                transform: translateX(0px);
-            }
-            .slider-container .slider-content .slider-single.active .slider-single-likes i {
-                animation-name: heartbeat;
-                animation-duration: 500ms;
-                animation-delay: 900ms;
-                animation-interation: 1;
-                animation-fill-mode: forwards;
             }
             .slider-container .slider-left {
                 position: absolute;
@@ -319,6 +176,7 @@ class Slider extends HTMLElement {
                 border-bottom: 2px solid #fdc84b;
                 border-left: 2px solid #fdc84b;
                 margin-right: -2px;
+                cursor: pointer;
             }
             .slider-container .slider-right {
                 position: absolute;
@@ -334,6 +192,7 @@ class Slider extends HTMLElement {
                 border-bottom: 2px solid #fdc84b;
                 border-left: 2px solid #fdc84b;
                 margin-left: -2px;
+                cursor: pointer;
             }
             .slider-container .not-visible {
                 display: none !important;
@@ -411,8 +270,6 @@ class Slider extends HTMLElement {
     var slide = this.shadowRoot.querySelectorAll('.slider-single');
     var slideTotal = slide.length - 1;
     var slideCurrent = -1;
-
-    
 
     function initArrows() {
         if (noArrows) {
@@ -565,6 +422,39 @@ class Slider extends HTMLElement {
             }
 
             slideInitial();
+    }
+
+    fetchData() {
+        const requestOptions = {
+            method: "POST",
+            redirect: "follow"
+        };
+
+        fetch('https://comptour-be.vercel.app/api/tourist-attractions/get-all', requestOptions)
+        .then(response => response.json())
+        .then(data => {
+            const images = data.data.slice(0, 5).map(item => item.image);
+            const names = data.data.slice(0, 5).map(item => item.name_place);
+            const descriptions = data.data.slice(0, 5).map(item => item.description);
+
+            const imgElements = this.shadowRoot.querySelectorAll('img');
+            const nameElements = this.shadowRoot.querySelectorAll('h2');
+            const descriptionElements = this.shadowRoot.querySelectorAll('p');
+
+            imgElements.forEach((img, index) => {
+                img.src = images[index];
+                img.alt = names[index];
+            });
+
+            nameElements.forEach((name, index) => {
+                name.textContent = names[index];
+            });
+
+            descriptionElements.forEach((description, index) => {
+                description.textContent = descriptions[index];
+            });
+            })
+        .catch(error => console.error('Error fetching data:', error));
     }
 }
 
