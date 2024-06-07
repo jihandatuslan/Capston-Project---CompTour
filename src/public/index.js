@@ -1,6 +1,9 @@
 import '../component/content-landing.js';
 import '../component/footer-bar.js';
 import '../component/image-slider.js';
+import '../component/header-componen.js';
+import '../component/content-about.js';
+import '../component/profile-team.js';
 
 // Create a map object
 const map = L.map('map').setView([-7.0693167, 108.7860433], 13);
