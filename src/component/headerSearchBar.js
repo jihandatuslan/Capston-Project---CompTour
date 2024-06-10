@@ -19,7 +19,7 @@ class headerSearchBar extends HTMLElement {
                                 <img src="/src/assets/logo.png" alt="Comp Tour" class="bg-center bg-no-repeat bg-cover w-32 md">
                             </a>
                         </div>
-
+                    <!--
                         <div class="flex justify-center w-2/3">
                             <form class="">
                                 <label
@@ -51,7 +51,7 @@ class headerSearchBar extends HTMLElement {
                                         required />
                                 </div>
                             </form>
-                        </div>
+                        </div> -->
             
                         <div class="md:flex md:items-center md:gap-12">
                             <nav aria-label="Global" class="hidden md:block">
