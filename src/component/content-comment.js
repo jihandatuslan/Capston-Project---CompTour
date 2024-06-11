@@ -1,16 +1,16 @@
 class contentLanding extends HTMLElement {
-  constructor() {
-    super();
-    this.attachShadow({ mode: "open" });
-  }
+    constructor() {
+        super();
+        this.attachShadow({ mode: "open" });
+    }
 
-  connectedCallback() {
-    this.render();
-    this.fetchData();
-  }
+    connectedCallback() {
+        this.render();
+        this.fetchData();
+    }
 
-  render() {
-    this.shadowRoot.innerHTML = `
+    render() {
+        this.shadowRoot.innerHTML = `
         <style>@import "/src/styles/tailwindcss-output/tailwind.css";</style> 
         <section>
         <h1 class=" pt-10 text-3xl text-center font-bold text-[#043420]">kolom <span class="text-[#FA2D00]">komentar</span></h1><br>
@@ -56,7 +56,7 @@ class contentLanding extends HTMLElement {
             </div><br>
          </section>
          `;
-  }
+    }
 }
 
 customElements.define("content-comment", contentLanding);

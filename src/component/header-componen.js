@@ -9,13 +9,13 @@ class headerComponen extends HTMLElement {
     }
 
     render() {
-    this.shadowRoot.innerHTML = `
+        this.shadowRoot.innerHTML = `
         <style>@import "/src/styles/tailwindcss-output/tailwind.css";</style>
             <header>
                 <div class="bg-[#054027] mx-auto h-16  w-full px-4 sm:px-6 lg:px-8">
                     <div class="flex h-16 items-center justify-between">
                         <div class="flex-1 md:flex md:items-center md:gap-12">
-                            <a class="block" href="#">
+                            <a class="block" href="/">
                                 <img src="/src/assets/logo.png" alt="Comp Tour" class="bg-center bg-no-repeat bg-cover w-32 md">
                             </a>
                         </div>
@@ -24,15 +24,15 @@ class headerComponen extends HTMLElement {
                             <nav aria-label="Global" class="hidden md:block">
                                 <ul class="flex items-center gap-10 text-sm ">
                                 <li>
-                                    <a class="text-xl font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]" href="#"> Home </a>
+                                    <a class="text-xl font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]" href="/index.html"> Home </a>
                                 </li>
                     
                                 <li>
-                                    <a class="text-xl font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]" href="#"> Blog </a>
+                                    <a class="text-xl font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]" href="/src/page/blog.html"> Blog </a>
                                 </li>
                     
                                 <li>
-                                    <a class="text-xl font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]" href="#"> About </a>
+                                    <a class="text-xl font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]" href="/src/page/about-team.html"> About </a>
                                 </li>
                                 </ul>
                             </nav>

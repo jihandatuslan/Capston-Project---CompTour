@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../styles/tailwindcss-output/tailwind.css">
+    <script type="module" src="../scripts/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <header-search></header-search>
+    </header>
+    <main>
+        <div class="mt-14">
+            <h1 class="text-center text-3xl font-bold tracking-widest">Blog</h1>
+            <div class="flex justify-center mt-5">
+                <form class="">
+                    <label for="default-search"
+                        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative md:w-80 lg:w-98">
+                        <div class="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3">
+                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
+                        <input type="search" id="default-search"
+                            class="block w-full p-3 mx-auto text-sm text-gray-900 bg-white border border-gray-300 rounded-lg ps-10 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Search...." required />
+                    </div>
+                </form>
+            </div>
+
+            <div id="blog-items" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-10 md:px-20">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <footer-bar></footer-bar>
+    </footer>
+</body>
+
+</html>

@@ -6,6 +6,7 @@ const requestOptions = {
 };
 // Create a map object
 const map = L.map('map').setView([-7.0693167, 108.7860433], 6);
+
 // Create an array to store the markers
 const markers = [];
 
@@ -32,11 +33,11 @@ fetch('https://comptour-be.vercel.app/api/tourist-attractions/get-all', requestO
             markers.push(marker);
 
             // Add event listener on marker click
-            marker.on('click', function() {
-            const attraction = this.attraction;
-            // Update HTML content with detail information
-            const descriptionDiv = document.querySelector('.description');
-            descriptionDiv.innerHTML = `
+            marker.on('click', function () {
+                const attraction = this.attraction;
+                // Update HTML content with detail information
+                const descriptionDiv = document.querySelector('.description');
+                descriptionDiv.innerHTML = `
                 <div class="bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="relative">
                         <img class="w-full h-44 object-cover" src="${attraction.image}" alt="${attraction.name_place}">
@@ -51,11 +52,11 @@ fetch('https://comptour-be.vercel.app/api/tourist-attractions/get-all', requestO
         }
     });
 
-    // Create a search input field
-    const searchInput = document.getElementById('search-wisata');
+// Create a search input field
+const searchInput = document.getElementById('search-wisata');
 
-    // Add an event listener to the search input field
-    searchInput.addEventListener('input', function() {
+// Add an event listener to the search input field
+searchInput.addEventListener('input', function () {
     const searchTerm = this.value.toLowerCase();
 
     // Hide all markers
@@ -65,8 +66,8 @@ fetch('https://comptour-be.vercel.app/api/tourist-attractions/get-all', requestO
     markers.forEach(marker => {
         const attraction = marker.attraction;
         if (attraction.name_place.toLowerCase().includes(searchTerm)) {
-        // Show the matching marker
-        marker.setOpacity(1);
+            // Show the matching marker
+            marker.setOpacity(1);
         }
     });
 });

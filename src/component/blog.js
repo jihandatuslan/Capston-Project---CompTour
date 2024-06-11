@@ -1,33 +1,33 @@
 
-        const requestOptions = {
-            method: "POST",
-            redirect: "follow",
-        };
-        const searchInput = document.getElementById("default-search");
-        fetch("https://comptour-be.vercel.app/api/blogs/get-all", requestOptions)
-        .then((response) => response.json())
-        .then((response) => {
-            const attractions = response.data;
-            renderTouristAttractions(attractions);
+const requestOptions = {
+    method: "POST",
+    redirect: "follow",
+};
+const searchInput = document.getElementById("default-search");
+fetch("https://comptour-be.vercel.app/api/blogs/get-all", requestOptions)
+    .then((response) => response.json())
+    .then((response) => {
+        const attractions = response.data;
+        renderTouristAttractions(attractions);
 
-            searchInput.addEventListener("input", () => {
+        searchInput.addEventListener("input", () => {
             const searchTerm = searchInput.value.trim().toLowerCase();
             const filteredAttractions = attractions.filter((attraction) => {
                 const title = attraction.title.toLowerCase();
                 return title.includes(searchTerm);
             });
             renderTouristAttractions(filteredAttractions);
-            });
-        })
-        .catch((error) => console.error(error));
+        });
+    })
+    .catch((error) => console.error(error));
 
-        const renderTouristAttractions = (attractions) => {
-            const touristAttractionsContainer = document.getElementById("blog-items");
-            touristAttractionsContainer.innerHTML = '';
-        
-            attractions.forEach((attraction) => {
-            const attractionItemContainer = document.createElement('div');
-            attractionItemContainer.innerHTML = `
+const renderTouristAttractions = (attractions) => {
+    const touristAttractionsContainer = document.getElementById("blog-items");
+    touristAttractionsContainer.innerHTML = '';
+
+    attractions.forEach((attraction) => {
+        const attractionItemContainer = document.createElement('div');
+        attractionItemContainer.innerHTML = `
                 <div class="bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="relative">
                         <img class="w-full h-48 object-cover" src="${attraction.image}" alt="${attraction.title}">
@@ -37,12 +37,11 @@
                         </div>
                     </div>
                     <div class="p-4 h-48">
-                        <div class="text-lg font-medium text-gray-800 mb-2"><a href="#"> ${attraction.title} </a></div>
+                        <div class="text-lg font-medium text-gray-800 mb-2"><a href="/src/page/detail-blog.html?blogid=${attraction.blogid}"> ${attraction.title} </a></div>
                         <p class="text-gray-500 text-sm">${attraction.description}</p>
                     </div>
                 </div>
                 `;
-                touristAttractionsContainer.appendChild(attractionItemContainer);
-            });
-        }
-        
+        touristAttractionsContainer.appendChild(attractionItemContainer);
+    });
+}
