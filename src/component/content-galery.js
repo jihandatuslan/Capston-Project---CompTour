@@ -1,16 +1,16 @@
 class contentLanding extends HTMLElement {
-  constructor() {
-    super();
-    this.attachShadow({ mode: "open" });
-  }
+    constructor() {
+        super();
+        this.attachShadow({ mode: "open" });
+    }
 
-  connectedCallback() {
-    this.render();
-    this.fetchData();
-  }
+    connectedCallback() {
+        this.render();
+        this.fetchData();
+    }
 
-  render() {
-    this.shadowRoot.innerHTML = `
+    render() {
+        this.shadowRoot.innerHTML = `
     <style>@import "/src/styles/tailwindcss-output/tailwind.css";</style>
         <section class="h-auto mx-auto mt-12 max-w-7xl">
         <div class="p-3">

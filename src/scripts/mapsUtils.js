@@ -51,23 +51,3 @@ fetch('https://comptour-be.vercel.app/api/tourist-attractions/get-all', requestO
             });
         }
     });
-
-// Create a search input field
-const searchInput = document.getElementById('search-wisata');
-
-// Add an event listener to the search input field
-searchInput.addEventListener('input', function () {
-    const searchTerm = this.value.toLowerCase();
-
-    // Hide all markers
-    markers.forEach(marker => marker.setOpacity(0));
-
-    // Search for markers that match the search term
-    markers.forEach(marker => {
-        const attraction = marker.attraction;
-        if (attraction.name_place.toLowerCase().includes(searchTerm)) {
-            // Show the matching marker
-            marker.setOpacity(1);
-        }
-    });
-});

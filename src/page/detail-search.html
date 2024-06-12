@@ -1,95 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail</title>
 
     <!-- link CSS -->
-    <link
-      rel="stylesheet"
-      href="../../styles/tailwindcss-output/tailwind.css" />
-    <script type="module" src="../../public/index.js"></script>
+    <link rel="stylesheet" href="../styles/tailwindcss-output/tailwind.css" />
+    <script type="module" src="../component/detail-search.js"></script>
 
-      <!-- link cdn leaflet -->
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""/>
-      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin="">
-      </script>
-  </head>
-  <body>
+    <!-- link cdn leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="">
+        </script>
+</head>
+
+<body>
     <header>
-      <div class="bg-[#054027] mx-auto h-16  w-full px-4 sm:px-6 lg:px-8">
-        <div class="flex h-16 items-center justify-between">
-            <div class="flex-1 md:flex md:items-center md:gap-12">
-                <a class="block" href="#">
-                    <img src="/src/assets/logo.png" alt="Comp Tour" class="bg-center bg-no-repeat bg-cover w-32 md">
-                </a>
-            </div>
-                <div class="flex justify-center w-2/3">
-                    <form class="">
-                        <label
-                        for="search-wisata"
-                        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
-                        >Search</label
-                        >
-                        <div class="relative md:w-80 lg:w-98">
-                            <div class="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3">
-                                <svg
-                                class="w-4 h-4 text-gray-500 dark:text-gray-400"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 20 20">
-                                <path
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                                </svg>
-                            </div>
-                            <input
-                                type="search"
-                                id="search-wisata"
-                                class="block w-full p-3 mx-auto text-sm text-gray-900 bg-white border border-gray-300 rounded-lg ps-10 focus:ring-blue-500 focus:border-blue-500"
-                                placeholder="Search...."
-                                required />
-                        </div>
-                    </form>
+        <div class="bg-[#054027] mx-auto h-16  w-full px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="flex-1 md:flex md:items-center md:gap-12">
+                    <a class="block" href="/">
+                        <img src="/src/assets/logo.png" alt="Comp Tour" class="bg-center bg-no-repeat bg-cover w-32 md">
+                    </a>
                 </div>
 
                 <div class="md:flex md:items-center md:gap-12">
                     <nav aria-label="Global" class="hidden md:block">
                         <ul class="flex items-center gap-10 text-sm ">
-                        <li>
-                            <a class="text-xl font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]" href="#"> Home </a>
-                        </li>
-            
-                        <li>
-                            <a class="text-xl font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]" href="#"> Blog </a>
-                        </li>
-            
-                        <li>
-                            <a class="text-xl font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]" href="#"> About </a>
-                        </li>
+                            <li>
+                                <a class="text-xl font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]"
+                                    href="/index.html"> Home </a>
+                            </li>
+
+                            <li>
+                                <a class="text-xl font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]"
+                                    href="/src/page/search.html"> Explore </a>
+                            </li>
+
+                            <li>
+                                <a class="text-xl font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]"
+                                    href="/src/page/blog.html"> Blog </a>
+                            </li>
+
+                            <li>
+                                <a class="text-xl font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]"
+                                    href="/src/page/about-team.html"> About </a>
+                            </li>
                         </ul>
                     </nav>
 
                     <div class="block md:hidden">
                         <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            >
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
                         </button>
                     </div>
@@ -97,61 +65,145 @@
             </div>
         </div>
     </header>
-    <main>
-      <section class="bg-center bg-no-repeat bg-[url('../../assets/image/Raja_Ampat_Mutiara_Indah_di_Timur_Indonesia-1536x1025.jpg')] bg-gray-200 bg-blend-multiply ">
-        <div class="max-w-screen-xl px-4 py-24 mx-auto text-center lg:py-32">         
-            <div class="bg-gray-600 bg-opacity-75 bg-gradient-to-b bg-custom-gradient">
-                <div class="max-w-screen-xl px-4 py-8 mx-auto lg:p-12 height-[31.9375rem]">
-                    <div class="flex md:justify-between">
-                        <div class="border w-100 h-100 border-gray-200 overflow-hidden rounded-bl-[2rem] bg-gray-500 md:p-5 ">
-                            <h2 class="mb-2 text-3xl font-extrabold text-gray-900 dark:text-white">Deskripsi</h2>
-                            <p class="description mb-4 text-lg font-normal text-gray-500 dark:text-gray-400"></p>
-                        </div>
-                        <div id="map" class="p-8 border w-full h-100 border-gray-200 rounded-tr-[2rem]  bg-gray-50  md:p-12 ">
 
+    <main>
+        <section
+            class="bg-center bg-no-repeat bg-[url('../../assets/image/Raja_Ampat_Mutiara_Indah_di_Timur_Indonesia-1536x1025.jpg')] bg-gray-200 bg-blend-multiply ">
+            <div class="max-w-screen-xl px-4 py-24 mx-auto text-center lg:py-32">
+                <div class="bg-gray-600 bg-opacity-75 bg-gradient-to-b bg-custom-gradient">
+                    <div class="max-w-screen-xl px-4 py-8 mx-auto lg:p-12 height-[31.9375rem]">
+                        <div class="flex md:justify-between">
+                            <div
+                                class="border w-100 h-100 border-gray-200 overflow-hidden rounded-bl-[2rem] bg-gray-500 md:p-5 ">
+                                <h2 class="mb-2 text-3xl font-extrabold text-gray-900 dark:text-white">Deskripsi</h2>
+                                <p class="mb-4 text-sm font-normal text-gray-500 dark:text-gray-400"
+                                    id="description-header"></p>
+                            </div>
+                            <div id="map"
+                                class="p-8 border w-full h-100 border-gray-200 rounded-tr-[2rem]  bg-gray-50  md:p-12 ">
+                            </div>
                         </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-    <section>
-        <content-galery></content-galery><br><br><br>
-    </section>
-    <section class="bg-[#D9D9D9]">
-      <section>
-        <h1 class=" pt-10 text-3xl text-center font-bold text-[#043420]">kolom <span class="text-[#FA2D00]">komentar</span></h1><br>
-        <form>
-            <div class="bg-[#436850] rounded-[1.875rem] mx-20 p-10">
-                 <div class="grid gap-6 mb-6 md:grid-cols-2">
-                    <div>
-                        <label for="name" class="block mb-2 text-sm font-medium text-white ">Nama Lengkap:</label>
-                        <input type="text" id="full name" class="bg-gray-50 border-4 border-solid focus:outline-none border-green-500 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Isi nama anda disini" required />
+                    </div>
+                </div>
+        </section>
+        <section class="h-auto mx-auto mt-12 max-w-7xl">
+            <div class="p-3">
+                <h1 class="text-3xl font-bold tracking-wide text-left text-[#FA2D00]">Budaya <span
+                        class="text-[#043420]">Local</span></h1>
+                <h1 class="text-3xl font-bold tracking-wide text-left text-[#043420]" id="province"></h1>
+            </div><br><br>
+            <div class="">
+                <div class="grid grid-3 md:grid-cols-3 gap-4 mx-20">
+                    <div class="grid gap-4" id="cultures"></div>
+                </div>
+            </div><br><br>
+            <p class="mx-20 sm:mx-0 text-center font-bold" id="description"></p>
+        </section>
+        <br />
+        <br />
+        <br />
+        <section class="bg-[#D9D9D9]">
+            <section>
+                <h1 class=" pt-10 text-3xl text-center font-bold text-[#043420]">kolom <span
+                        class="text-[#FA2D00]">komentar</span></h1><br>
+                <div class="bg-[#436850] rounded-[1.875rem] mx-20 p-10">
+                    <span id="alert"></span>
+                    <div class="grid gap-6 mb-6 md:grid-cols-2">
+                        <div>
+                            <label for="name" class="block mb-2 text-sm font-medium text-white ">Nama
+                                Lengkap:</label>
+                            <input type="text" id="full-name"
+                                class="bg-gray-50 border-4 border-solid focus:outline-none border-green-500 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                                placeholder="Isi nama anda disini" required />
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-2 text-sm font-medium text-white ">email / no
+                                hanphone:</label>
+                            <input type="tel" id="contact"
+                                class="bg-gray-50 border-4 border-solid focus:outline-none border-green-500 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                                placeholder="Isi nomor telp atau email" required />
+                        </div>
                     </div>
                     <div>
-                        <label for="phone" class="block mb-2 text-sm font-medium text-white ">email / no hanphone:</label>
-                        <input type="tel" id="phone" class="bg-gray-50 border-4 border-solid focus:outline-none border-green-500 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Isi nomor telp atau email" required />
+                        <label for="message" class="block mb-2 text-sm font-medium text-white">Berikan Komentar
+                            :</label>
+                        <textarea id="message"
+                            class="bg-gray-50 border-4 border-solid border-green-500 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="Write your thoughts here..."></textarea>
                     </div>
-                 </div>
-                <div>
-                     <label for="message" class="block mb-2 text-sm font-medium text-white">Berikan Komentar :</label>
-                     <textarea id="message" class="bg-gray-50 border-4 border-solid border-green-500 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Write your thoughts here..."></textarea>
-                </div> 
-            </div> <br>
-            <div class="mx-20 text-end">
-                <button type="submit" class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>  
-            </div>                         
-        </form><br><br> 
+                </div> <br>
+                <div class="mx-20 text-end">
+                    <button type="button"
+                        class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+                        onclick="sendComment()">Submit</button>
+                </div><br><br>
+            </section>
+            <section class="bg-white">
+                <h1 class="mx-20 pt-10 text-3xl text-start font-bold text-[#043420]">Komentar :</h1><br>
+                <div class="bg-[#436850] rounded-[1.875rem] mx-20 p-10 comments-container" id="comments"></div>
+                <br>
+            </section>
         </section>
-        <section class="bg-white">
-            <h1 class="mx-20 pt-10 text-3xl text-start font-bold text-[#043420]">Komentar :</h1><br>
-            <div class="bg-[#436850] rounded-[1.875rem] mx-20 p-10 comments-container">
-            
-            </div><br>
-        </section>
-    </section>
     </main>
     <footer>
-      <footer-bar></footer-bar>
+        <footer-bar></footer-bar>
     </footer>
-  </body>
+</body>
+<script>
+    function sendComment() {
+        const urlParams = new URLSearchParams(window.location.search)
+        const taid = urlParams.get('taid')
+        const name = document.getElementById('full-name')
+        const contact = document.getElementById('contact')
+        const message = document.getElementById('message')
+
+        const baseURL = 'https://comptour-be.vercel.app'
+        fetch(baseURL + '/api/comments/store', {
+            method: 'POST',
+            body: JSON.stringify({
+                taid: taid,
+                name: name.value,
+                contact: contact.value,
+                desc: message.value
+            }),
+            redirect: 'follow'
+        })
+            .then(response => response.json())
+            .then(response => {
+                if (response.status >= 400) {
+                    document.getElementById('alert').innerText = response.message
+                }
+
+                fetch('https://comptour-be.vercel.app/api/tourist-attractions/get-detail?taid=' + taid, { method: 'POST', redirect: 'follow' })
+                    .then(response => response.json())
+                    .then(data => {
+                        const attractions = data.data;
+
+                        const comments = document.getElementById('comments')
+                        comments.innerHTML = '';
+
+                        attractions.Comment.forEach((comment) => {
+                            const commentsItem = document.createElement('div');
+                            commentsItem.innerHTML = `
+                                <div>
+                                    <h3>${comment.name}</h3>
+                                    <small>
+                                        <i>${comment.contact}</i> | <span>${new Date(comment.time)}</span>
+                                    </small>
+                                    <p>${comment.description}</p>
+                                    <hr />
+                                </div>
+                            `;
+                            comments.appendChild(commentsItem);
+                        })
+                    })
+                name.value = ''
+                contact.value = ''
+                message.value = ''
+                document.getElementById('alert').innerText = response.message
+            })
+            .catch((error) => console.error("Error fetching data:", error))
+    }
+</script>
+
 </html>
