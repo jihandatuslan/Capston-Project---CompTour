@@ -57,7 +57,7 @@ window.onload = function () {
                     <div>
                         <h3>${comment.name}</h3>
                         <small>
-                            <i>${comment.contact}</i> | <span>${new Date(comment.time)}</span>
+                            <i><span>${new Date(comment.time)}</span></i>
                         </small>
                         <p>${comment.description}</p>
                         <hr />
