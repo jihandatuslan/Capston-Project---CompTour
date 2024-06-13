@@ -5,4 +5,3 @@ import '../component/content-about.js';
 import '../component/profile-team.js';
 import '../component/content-galery.js';
 import '../component/content-comment.js';
-import './mapsUtils.js';
