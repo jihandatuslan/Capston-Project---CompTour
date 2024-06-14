@@ -4,11 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page Comp Tour</title>
+  <link rel="icon" href="/src/assets/favicon.png" type="image/x-icon">
+  <title>CompTour</title>
   <!-- link tailwindcss -->
   <link rel="stylesheet" href="./src/styles/tailwindcss-output/tailwind.css">
   <script type="module" src="./src/scripts/index.js"></script>
   <script type="module" src="./src/scripts/mapsUtils.js"></script>
+
+  <!-- font -->
+   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+   </style>
 
   <!-- link cdn leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -18,21 +24,21 @@
     </script>
 </head>
 
-<body>
+<body class=" font-poppins">
   <!-- HEADER -->
-  <header class="bg-no-repeat bg-cover bg-slate-300"
-    style="background-image: url(./src/assets/image/Raja_Ampat_Mutiara_Indah_di_Timur_Indonesia-1536x1025.jpg);">
-    <div class="h-20 max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+  <header class="bg-center bg-no-repeat bg-cover bg-slate-300"
+    style="background-image: url(./src/assets/image/LabuanBajo.png);">
+    <div class="w-full h-16 px-4 mx-auto sm:px-6 lg:px-10">
       <div class="flex items-center justify-between h-16">
         <div class="flex-1 md:flex md:items-center md:gap-12">
-          <a class="block" href="#">
-            <img src="./src/assets/logo.png" alt="Comp Tour" class="bg-center bg-no-repeat bg-cover w-36 md">
-          </a>
+            <a class="block" href="/">
+                <img src="/src/assets/logo.png" alt="Comp Tour" class="w-32 bg-center bg-no-repeat bg-cover md">
+            </a>
         </div>
 
         <div class="md:flex md:items-center md:gap-12">
           <nav aria-label="Global" class="hidden md:block">
-            <ul class="flex items-center gap-10 text-sm ">
+            <ul class="flex items-center gap-10 text-sm font-poppins ">
               <li>
                 <a
                   class="text-xl font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]"
@@ -72,13 +78,14 @@
     </div>
     </div>
     <div class="max-w-screen-xl px-4 py-8 mx-auto mt-12 mb-20 sm:px-6 sm:py-12 lg:px-8 lg:py-16 rounded-3xl">
-      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-16">
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-16 md:mx-10">
         <div id="map" class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
 
         </div>
 
         <div class="lg:py-24">
-          <h2 class="text-4xl font-bold text-white sm:text-4xl">WELCOME TO INDONESIA</h2>
+          <h2 class="text-4xl font-bold text-white sm:text-4xl">VISIT</h2>
+          <h2 class="text-4xl font-bold text-white sm:text-4xl">INDONESIA</h2>
 
           <a href="/src/page/search.html"
             class="inline-block px-12 py-3 mt-8 text-sm font-medium text-white transition bg-indigo-600 rounded hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400">
@@ -91,15 +98,14 @@
   <!-- END HEADER -->
   <!-- MAIN -->
   <main>
-    <section class="h-auto mx-auto mt-12 max-w-7xl">
-      <div class="p-3">
-        <h1 class="text-3xl font-semibold tracking-wide text-right">Destinasi</h1>
-        <h1 class="text-4xl font-semibold tracking-wide text-right">Ter<span class="text-[#FA2D00]">populer!</span>
+    <section class="h-auto mx-auto max-w-7xl">
+      <div class="laptop:mx-20 tablet:mx-10 mobile:mx-5">
+        <h1 class="laptop:text-3xl tablet:text-2xl mobile:text-xl font-bold tracking-wide text-right text-[#043420] ">Destinasi</h1>
+        <h1 class="laptop:text-3xl tablet:text-2xl mobile:text-xl font-bold tracking-wide text-right text-[#043420]">Ter<span class="text-[#FA2D00]">populer!</span>
         </h1>
       </div>
-    </section>
-    <slider-image></slider-image>
-    <br>
+    <slider-image></slider-image><br>
+  </section>
     <section class="p-10 bg-gray-300">
       <content-item></content-item>
     </section>

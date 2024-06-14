@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Document</title>
+    <link rel="icon" href="/src/assets/favicon.png" type="image/x-icon" />
+    <title>Detail blog</title>
     <link rel="stylesheet" href="../styles/tailwindcss-output/tailwind.css" />
     <script type="module" src="../component/detail-blog.js"></script>
     <script type="module" src="../scripts/index.js"></script>
@@ -82,11 +82,13 @@
       </div>
     </header>
     <br />
-    <div class="mx-20">
-      <div id="judul" class="text-xl font-bold text-center text-[054027]"></div>
+    <div class="laptop:mx-20 tablet:mx-10 mobile:mx-5">
+      <div
+        id="judul"
+        class="laptop:text-2xl tablet:text-xl mobile:text-lg font-bold text-center text-[#054027]"></div>
       <br />
       <img id="gambar" width="500" class="mx-auto rounded-t-[30px]" /><br />
-      <div id="text"></div>
+      <div id="text" class="text-justify font-poppins"></div>
     </div>
     <br />
 
