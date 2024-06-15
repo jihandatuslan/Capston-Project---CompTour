@@ -411,11 +411,26 @@ class Slider extends HTMLElement {
         const descriptions = data.recommendations
           .slice(0, 3)
           .map((item) => item.description);
+        const regency = data.recommendations
+          .slice(0, 3)
+          .map((item) => item.regency);
+        const province = data.recommendations
+          .slice(0, 3)
+          .map((item) => item.province);
 
         const imgElements = this.shadowRoot.querySelectorAll("img");
-        const nameElements =
-          this.shadowRoot.querySelectorAll("#TouristAttraction");
+        const nameElements = this.shadowRoot.querySelectorAll("#TouristAttraction");
         const descriptionElements = this.shadowRoot.querySelectorAll("p");
+        const nameRegency = this.shadowRoot.querySelectorAll("#regency");
+        const naemProvince = this.shadowRoot.querySelectorAll("#province");
+
+        naemProvince.forEach((name, index) => {
+          name.textContent = province[index];
+        });
+
+        nameRegency.forEach((name, index) => {
+          name.textContent = regency[index];
+        });
 
         imgElements.forEach((img, index) => {
           img.src = images[index];

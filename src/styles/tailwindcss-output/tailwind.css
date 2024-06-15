@@ -792,10 +792,6 @@ video {
   height: 100%;
 }
 
-.h-40 {
-  height: 10rem;
-}
-
 .max-h-full {
   max-height: 100%;
 }
@@ -822,10 +818,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-40 {
-  width: 10rem;
 }
 
 .max-w-7xl {
