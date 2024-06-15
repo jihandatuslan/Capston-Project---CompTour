@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -792,6 +792,10 @@ video {
   height: 100%;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -818,6 +822,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .max-w-7xl {
@@ -856,10 +864,6 @@ video {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-wrap {
@@ -1527,10 +1531,6 @@ video {
     margin-right: 1.25rem;
   }
 
-  .mobile\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .mobile\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1604,11 +1604,6 @@ video {
     line-height: 1.5rem;
   }
 
-  .sm\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .tablet\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
@@ -1621,10 +1616,6 @@ video {
 
   .tablet\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .tablet\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .tablet\:text-2xl {
@@ -1721,11 +1712,6 @@ video {
   .md\:text-left {
     text-align: left;
   }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -1795,10 +1781,6 @@ video {
   .laptop\:my-20 {
     margin-top: 5rem;
     margin-bottom: 5rem;
-  }
-
-  .laptop\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .laptop\:text-2xl {

@@ -16,7 +16,7 @@ class ProfileTeams extends HTMLElement {
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
 
                     <div class="max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-[#C6C6C6] dark:text-gray-800">
-                        <img src="https://source.unsplash.com/150x150/?portrait?3" alt="" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                        <img src="../assets/image/profile-saeful.jpeg" alt="Saeful Rochmat" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
                         <div class="space-y-4 text-center divide-y dark:divide-gray-300">
                             <div class="my-2 space-y-1">
                                 <h2 class="text-xl font-semibold sm:text-2xl">Saeful Rochmat</h2>
@@ -48,7 +48,7 @@ class ProfileTeams extends HTMLElement {
                     </div>
 
                     <div class="max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-[#C6C6C6] dark:text-gray-800">
-                        <img src="https://source.unsplash.com/150x150/?portrait?3" alt="" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                        <img src="../assets/image/profile-jihan.jpeg" alt="Jihan Datuslan Ibrahim" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
                         <div class="space-y-4 text-center divide-y dark:divide-gray-300">
                             <div class="my-2 space-y-1">
                                 <h2 class="text-xl font-semibold sm:text-2xl">Jihan Datuslan Ibrahim</h2>
@@ -80,7 +80,7 @@ class ProfileTeams extends HTMLElement {
                     </div>
 
                     <div class="max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-[#C6C6C6] dark:text-gray-800">
-                        <img src="https://source.unsplash.com/150x150/?portrait?3" alt="" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                        <img src="../assets/image/profile-apip.jpeg" alt="Apip Rahman Syahidan" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
                         <div class="space-y-4 text-center divide-y dark:divide-gray-300">
                             <div class="my-2 space-y-1">
                                 <h2 class="text-xl font-semibold sm:text-2xl">Apip Rahman Syahidan</h2>
