@@ -15,19 +15,19 @@ class Slider extends HTMLElement {
       <style>
        @import "/src/styles/tailwindcss-output/tailwind.css";
       </style>
-      <div class="slider-container">
-    <div class="slider-content ">
+      <div class="slider-container ">
+    <div class="slider-content left-[50%] laptop:top-[35%] tablet:top-[20%] mobile:top-[20%] relative laptop:h-[50%] tablet:h-[30%] mobile:h-[30%] w-[90%]">
       <div class="slider-single ">
         <img
           class="slider-single-image relative left-0 top-0 w-[50%] mx-auto h-auto shadow-lg transition-transform duration-[500ms] transform scale-0 opacity-0 rounded-3xl"
           src="https://picsum.photos/id/973/200/300"
           alt="1" />
-        <div class="slider-single-title mx-auto ">
+        <div class="slider-single-title laptop:mx-auto tablet:mx-auto mobile:mx-10">
                 <div class="grid items-center grid-cols-1 gap-6 sm:grid-cols-2 ">
-                  <div class="mb-3 text-end">
-                    <h1 class="text-[#043420] laptop:text-2xl tablet:text-xl mobile:text-lg font-bold " id="regency">Kabupaten</h1>
+                  <div class="mb-3  laptop:text-end tablet:text-end mobile:text-start font-poppins ">
+                    <h1 class="text-[#043420] laptop:text-lg tablet:text-base mobile:text-base font-bold " id="regency">Kabupaten</h1>
                     <h1 class="text-[#FA2D00] laptop:text-2xl tablet:text-xl mobile:text-lg font-bold " id="TouristAttraction">Nama tempat wisata</h1>
-                    <h1 class="text-[#043420] laptop:text-2xl tablet:text-xl mobile:text-lg font-bold " id="province">Nama Profinsi</h1>
+                    <h1 class="text-[#043420] laptop:text-lg tablet:text-base mobile:text-base font-bold " id="province">Nama Profinsi</h1>
                   </div>
                   <p class="pl-6 mb-3 laptop:text-lg tablet:text-base mobile:text-sm font-semibold border-l-4 border-black border-dotted ">
                     Deliver great service experiences fast - without the complexity of
@@ -36,7 +36,7 @@ class Slider extends HTMLElement {
                     trail for every change.
                   </p>
                 </div>
-              </div>
+            </div>
       </div>
   
         <div class="slider-single ">
@@ -44,12 +44,12 @@ class Slider extends HTMLElement {
             class="slider-single-image relative left-0 top-0 w-[50%] mx-auto h-auto shadow-lg transition-transform duration-[500ms] transform scale-0 opacity-0 rounded-3xl"
             src="https://picsum.photos/id/974/200/300"
             alt="2" />
-               <div class="slider-single-title mx-auto">
+               <div class="slider-single-title laptop:mx-auto tablet:mx-auto mobile:mx-10">
                 <div class="grid items-center grid-cols-1 gap-6 sm:grid-cols-2 ">
-                  <div class="mb-3 text-end">
-                    <h1 class="text-[#043420] laptop:text-2xl tablet:text-xl mobile:text-lg font-bold " id="regency">Kabupaten</h1>
+                  <div class="mb-3  laptop:text-end tablet:text-end mobile:text-start font-poppins">
+                    <h1 class="text-[#043420] laptop:text-lg tablet:text-base mobile:text-base font-bold " id="regency">Kabupaten</h1>
                     <h1 class="text-[#FA2D00] laptop:text-2xl tablet:text-xl mobile:text-lg font-bold " id="TouristAttraction">Nama tempat wisata</h1>
-                    <h1 class="text-[#043420] laptop:text-2xl tablet:text-xl mobile:text-lg font-bold " id="province">Nama Profinsi</h1>
+                    <h1 class="text-[#043420] laptop:text-lg tablet:text-base mobile:text-base font-bold " id="province">Nama Profinsi</h1>
                   </div>
                   <p class="pl-6 mb-3 laptop:text-lg tablet:text-base mobile:text-sm font-semibold border-l-4 border-black border-dotted">
                     Deliver great service experiences fast - without the complexity of
@@ -66,12 +66,12 @@ class Slider extends HTMLElement {
             class="slider-single-image relative left-0 top-0 w-[50%] mx-auto h-auto shadow-lg transition-transform duration-[500ms] transform scale-0 opacity-0 rounded-3xl"
             src="https://picsum.photos/id/975/200/300"
             alt="3" />
-          <div class="slider-single-title mx-auto">
+          <div class="slider-single-title laptop:mx-auto tablet:mx-auto mobile:mx-10">
                 <div class="grid items-center grid-cols-1 gap-6 sm:grid-cols-2 ">
-                  <div class="mb-3 text-end">
-                    <h1 class="text-[#043420] laptop:text-2xl tablet:text-xl mobile:text-lg font-bold " id="regency">Kabupaten</h1>
+                  <div class="mb-3  laptop:text-end tablet:text-end mobile:text-start font-poppins">
+                    <h1 class="text-[#043420] laptop:text-lg tablet:text-base mobile:text-base font-bold " id="regency">Kabupaten</h1>
                     <h1 class="text-[#FA2D00] laptop:text-2xl tablet:text-xl mobile:text-lg font-bold " id="TouristAttraction">Nama tempat wisata</h1>
-                    <h1 class="text-[#043420] laptop:text-2xl tablet:text-xl mobile:text-lg font-bold " id="province">Nama Profinsi</h1>
+                    <h1 class="text-[#043420] laptop:text-lg tablet:text-base mobile:text-base font-bold " id="province">Nama Profinsi</h1>
                   </div>
                   <p class="pl-6 mb-3 laptop:text-lg tablet:text-base mobile:text-sm font-semibold border-l-4 border-black border-dotted">
                     Deliver great service experiences fast - without the complexity of
@@ -89,16 +89,11 @@ class Slider extends HTMLElement {
     .slider-container {
       position: relative;
       margin: 0 auto;
-      margin-bottom: 28%;
+      margin-bottom: 40vh;
       width: 100%;
       height: 600px;
     }
     .slider-container .slider-content {
-      position: relative;
-      left: 50%;
-      top: 35%;
-      width: 70%;
-      height: 60%;
       transform: translate(-50%, -50%);
     }
       .slider-single-image {
@@ -187,10 +182,8 @@ class Slider extends HTMLElement {
       z-index: 3;
       display: block;
       right: 68%;
-      top: 35%;
       color: #ffffff;
       transform: translateY(-50%);
-      padding: 20px 15px;
       border-top: 2px solid #fdc84b;
       border-right: 2px solid #fdc84b;
       border-bottom: 2px solid #fdc84b;
@@ -203,10 +196,8 @@ class Slider extends HTMLElement {
       z-index: 3;
       display: block;
       left: 68%;
-      top: 35%;
       color: #ffffff;
       transform: translateY(-50%);
-      padding: 20px 15px;
       border-top: 2px solid #fdc84b;
       border-right: 2px solid #fdc84b;
       border-bottom: 2px solid #fdc84b;
@@ -217,16 +208,7 @@ class Slider extends HTMLElement {
     .slider-container .not-visible {
       display: none !important;
     } /*# sourceMappingURL=style.css.map */
-
-    // media query
-
-    @media (max-width: 360px) {
-    
-    }
-
-  </style>
-  
-        `;
+ `;
   }
 
   initSlider() {
@@ -245,7 +227,18 @@ class Slider extends HTMLElement {
       const iLeft = document.createElement("i");
       iLeft.classList.add("fa");
       iLeft.classList.add("fa-arrow-left");
-      leftArrow.classList.add("slider-left");
+      leftArrow.classList.add(
+        "slider-left",
+        "laptop:top-[35%]",
+        "tablet:top-[20%]",
+        "mobile:top-[20%]",
+        "laptop:py-[20px]",
+        "tablet:py-[15px]",
+        "mobile:py-[15px]",
+        "laptop:px-[15px]",
+        "tablet:px-[10px]",
+        "mobile:px-[10px]"
+      );
       leftArrow.appendChild(iLeft);
       leftArrow.addEventListener("click", () => {
         slideLeft();
@@ -254,7 +247,18 @@ class Slider extends HTMLElement {
       const iRight = document.createElement("i");
       iRight.classList.add("fa");
       iRight.classList.add("fa-arrow-right");
-      rightArrow.classList.add("slider-right");
+      rightArrow.classList.add(
+        "slider-right",
+        "laptop:top-[35%]",
+        "tablet:top-[20%]",
+        "mobile:top-[20%]",
+        "laptop:py-[20px]",
+        "tablet:py-[15px]",
+        "mobile:py-[15px]",
+        "laptop:px-[15px]",
+        "tablet:px-[10px]",
+        "mobile:px-[10px]"
+      );
       rightArrow.appendChild(iRight);
       rightArrow.addEventListener("click", () => {
         slideRight();
@@ -419,7 +423,8 @@ class Slider extends HTMLElement {
           .map((item) => item.province);
 
         const imgElements = this.shadowRoot.querySelectorAll("img");
-        const nameElements = this.shadowRoot.querySelectorAll("#TouristAttraction");
+        const nameElements =
+          this.shadowRoot.querySelectorAll("#TouristAttraction");
         const descriptionElements = this.shadowRoot.querySelectorAll("p");
         const nameRegency = this.shadowRoot.querySelectorAll("#regency");
         const naemProvince = this.shadowRoot.querySelectorAll("#province");

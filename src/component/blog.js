@@ -28,7 +28,7 @@ const renderTouristAttractions = (attractions) => {
     const attractionItemContainer = document.createElement("div");
     attractionItemContainer.innerHTML = `
                 <div class="bg-[#D9D9D9] shadow-md rounded-[30px]">
-                    <div class="relative">
+                    <div class="relative font-poppins">
                         <img class="object-cover w-full h-48 rounded-t-[30px]" src="${attraction.image}" alt="${attraction.title}">
                         <div class="absolute top-0 right-0 px-2 py-1 m-3 font-bold text-white bg-indigo-500 rounded-md">New
                         </div>
@@ -37,7 +37,7 @@ const renderTouristAttractions = (attractions) => {
                          <div class="mb-2 pt-2 px-4 laptop:text-lg tablet:text-base mobile:text-base font-bold text-[#043420] "><a href="/src/page/detail-blog.html?blogid=${attraction.blogid}"> ${attraction.title} </a></div>
                     </div>
                     <div class="h-48 px-4 mb-2 overflow-auto text-justify no-scrollbar">
-                        <p class="text-sm text-gray-500 font-poppins">${attraction.description}</p>
+                        <p class="text-sm text-gray-500 ">${attraction.description}</p>
                     </div>
                 </div>
                  <style>

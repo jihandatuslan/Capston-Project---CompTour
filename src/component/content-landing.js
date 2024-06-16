@@ -13,16 +13,16 @@ class contentLanding extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>@import "/src/styles/tailwindcss-output/tailwind.css";</style>
         <section>
-          <div class="grid grid-cols-1 gap-6 my-12 sm:grid-cols-2 bg-[#436850] rounded-[1.875rem] w-full mx-auto ">
+          <div class="grid grid-cols-1 gap-6 my-12  laptop:grid-cols-2 bg-[#436850] rounded-[1.875rem] w-full mx-auto ">
             <div>
               <img
                 src="../assets/image/gambar-pemandangan-indonesia.jpg"
                 alt=""
                 class="w-full h-full object-cover  rounded-l-[1.875rem]" />
             </div>
-            <div class="p-5 font-poppins">
+            <div class="p-5 ">
               <h2 class="laptop:text-2xl tablet:text-xl mobile:text-lg md:pb-6 font-bold  text-white">BROMO</h2>
-              <p class="mb-3 text-white font-light ">
+              <p class="mb-3 text-white font-light laptop:text-lg tablet:text-base mobile:text-sm ">
               Deliver great service experiences fast - without the complexity of
               traditional ITSM solutions.Accelerate critical development work,
               eliminate toil, and deploy changes with ease, with a complete audit
@@ -37,10 +37,10 @@ class contentLanding extends HTMLElement {
             </div>
           </div>
   
-          <div class="grid grid-cols-1 gap-6 my-12 tablet:grid-cols-2 bg-[#436850] rounded-[1.875rem] w-full mx-auto">
-            <div class="p-5 font-poppins">
+          <div class="grid grid-cols-1 gap-6 my-12 laptop:grid-cols-2 bg-[#436850] rounded-[1.875rem] w-full mx-auto">
+            <div class="p-5 ">
               <h2 class="laptop:text-2xl tablet:text-xl mobile:text-lg md:pb-6 font-bold  text-white">BROMO</h2>
-              <p class="mb-3 text-white font-light ">
+              <p class="mb-3 text-white font-light laptop:text-lg tablet:text-base mobile:text-sm ">
               Deliver great service experiences fast - without the complexity of
               traditional ITSM solutions.Accelerate critical development work,
               eliminate toil, and deploy changes with ease, with a complete audit
@@ -62,16 +62,16 @@ class contentLanding extends HTMLElement {
           </div>
   
   
-          <div class="grid grid-cols-1 gap-6 my-12 sm:grid-cols-2 bg-[#436850] rounded-[1.875rem] w-full mx-auto">
+          <div class="grid grid-cols-1 gap-6 my-12 laptop:grid-cols-2 bg-[#436850] rounded-[1.875rem] w-full mx-auto">
             <div>
               <img
                 src="../assets/image/gambar-pemandangan-indonesia.jpg"
                 alt=""
                 class="w-full h-full object-cover  rounded-l-[1.875rem]" />
             </div>
-            <div class="p-5 font-poppins">
+            <div class="p-5 ">
               <h2 class="laptop:text-2xl tablet:text-xl mobile:text-lg md:pb-6 font-bold  text-white">BROMO</h2>
-              <p class="mb-3 text-white font-light ">
+              <p class="mb-3 text-white font-light laptop:text-lg tablet:text-base mobile:text-sm ">
               Deliver great service experiences fast - without the complexity of
               traditional ITSM solutions.Accelerate critical development work,
               eliminate toil, and deploy changes with ease, with a complete audit
@@ -86,10 +86,10 @@ class contentLanding extends HTMLElement {
             </div>
           </div>
   
-          <div class="grid grid-cols-1 gap-6 my-12 sm:grid-cols-2 bg-[#436850] rounded-[1.875rem] w-full mx-auto">
-            <div class="p-5 font-poppins">
+          <div class="grid grid-cols-1 gap-6 my-12 laptop:grid-cols-2 bg-[#436850] rounded-[1.875rem] w-full mx-auto">
+            <div class="p-5 ">
               <h2 class="laptop:text-2xl tablet:text-xl mobile:text-lg md:pb-6 font-bold  text-white">BROMO</h2>
-              <p class="mb-3 text-white font-light ">
+              <p class="mb-3 text-white font-light laptop:text-lg tablet:text-base mobile:text-sm ">
               Deliver great service experiences fast - without the complexity of
               traditional ITSM solutions.Accelerate critical development work,
               eliminate toil, and deploy changes with ease, with a complete audit
@@ -106,7 +106,7 @@ class contentLanding extends HTMLElement {
               <img
                 src="../assets/image/gambar-pemandangan-indonesia.jpg"
                 alt=""
-                class="w-full h-auto object-cover  rounded-r-[1.875rem]" />
+                class="w-full h-full object-cover  rounded-r-[1.875rem]" />
             </div>
           </div>
         </section>

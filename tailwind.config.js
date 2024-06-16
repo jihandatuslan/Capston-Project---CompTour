@@ -11,7 +11,7 @@ module.exports = {
         120: "600px",
       },
       fontFamily: {
-        poppins: ["Poppins", "serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       screens: {
         mobile: "360px", // breakpoint untuk mobile

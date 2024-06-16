@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free movie catalogue for you" />
+    <link rel="icon" href="/src/assets/favicon.png" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="/src/styles/tailwindcss-output/tailwind.css" />
+
+    <title>CompTour</title>
+  </head>
+  <body>
+    <div class="flex items-center justify-between h-20 app-bar bg-[#054027]">
+      <div class="app-bar__brand">
+        <a class="" href="/">
+          <img src="/src/assets/LogoT.png" alt="Comp Tour" class="h-16" />
+        </a>
+      </div>
+      <nav
+        id="navigationDrawer"
+        class="laptop:text-right tablet:text-right mobile:text-center app-bar__navigation">
+        <ul>
+          <li>
+            <a
+              class="laptop:text-xl tablet:text-lg mobile:text-base font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]"
+              href="/">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="laptop:text-xl tablet:text-lg mobile:text-base font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]"
+              href="/src/page/blog.html">
+              Blog
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="laptop:text-xl tablet:text-lg mobile:text-base font-bold text-white transition hover:text-[#FA2D00] focus:text-[#FA2D00]"
+              href="/src/page/about-team.html">
+              About
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="app-bar__menu">
+        <button
+          class="p-2 text-gray-600 transition bg-gray-100 rounded hover:text-gray-600/75">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <main id="mainContent"></main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const drawerButton = document.querySelector(".app-bar__menu button");
+        const navigationDrawer = document.getElementById("navigationDrawer");
+
+        drawerButton.addEventListener("click", function () {
+          navigationDrawer.classList.toggle("open");
+        });
+
+        document.addEventListener("click", function (event) {
+          if (
+            !navigationDrawer.contains(event.target) &&
+            event.target !== drawerButton
+          ) {
+            navigationDrawer.classList.remove("open");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

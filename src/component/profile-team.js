@@ -12,11 +12,11 @@ class ProfileTeams extends HTMLElement {
     this.shadowRoot.innerHTML = `
         <style>@import "/src/styles/tailwindcss-output/tailwind.css";</style>
         <div class="w-full p-10 bg-[#F3FFE7]">
-                <h1 class="laptop:text-3xl tablet:text-2xl mobile:text-xl font-bold text-[#054027] text-center mt-1 mb-10">Our <span class="text-[#FA2D00]">Team</span></h1>
+                <h1 class="font-poppins laptop:text-3xl tablet:text-2xl mobile:text-xl font-bold text-[#054027] text-center mt-1 mb-10">Our <span class="text-[#FA2D00]">Team</span></h1>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
 
                     <div class="max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-[#C6C6C6] dark:text-gray-800">
-                        <img src="../assets/image/profile-saeful.jpeg" alt="Saeful Rochmat" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                        <img src="../assets/image/profile-saeful.jpeg" alt="Saeful Rochmat" class="object-cover w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
                         <div class="space-y-4 text-center divide-y dark:divide-gray-300">
                             <div class="my-2 space-y-1">
                                 <h2 class="text-xl font-semibold sm:text-2xl">Saeful Rochmat</h2>
@@ -48,7 +48,7 @@ class ProfileTeams extends HTMLElement {
                     </div>
 
                     <div class="max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-[#C6C6C6] dark:text-gray-800">
-                        <img src="../assets/image/profile-jihan.jpeg" alt="Jihan Datuslan Ibrahim" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                        <img src="../assets/image/profile-jihan.jpeg" alt="Jihan Datuslan Ibrahim" class="object-cover w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
                         <div class="space-y-4 text-center divide-y dark:divide-gray-300">
                             <div class="my-2 space-y-1">
                                 <h2 class="text-xl font-semibold sm:text-2xl">Jihan Datuslan Ibrahim</h2>
@@ -80,7 +80,7 @@ class ProfileTeams extends HTMLElement {
                     </div>
 
                     <div class="max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-[#C6C6C6] dark:text-gray-800">
-                        <img src="../assets/image/profile-apip.jpeg" alt="Apip Rahman Syahidan" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
+                        <img src="../assets/image/profile-apip.jpeg" alt="Apip Rahman Syahidan" class="object-cover w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
                         <div class="space-y-4 text-center divide-y dark:divide-gray-300">
                             <div class="my-2 space-y-1">
                                 <h2 class="text-xl font-semibold sm:text-2xl">Apip Rahman Syahidan</h2>

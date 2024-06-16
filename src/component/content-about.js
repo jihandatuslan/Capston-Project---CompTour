@@ -12,10 +12,10 @@ class ContentAbout extends HTMLElement {
     this.shadowRoot.innerHTML = `
         <style>@import "/src/styles/tailwindcss-output/tailwind.css";</style>
         <div class=" laptop:mx-28 tablet:mx-10 mobile:mx-5 h-full m-auto laptop:my-20 tablet:my-10  text-center ">
-                <h1 class="laptop:text-3xl tablet:text-2xl mobile:text-xl font-bold text-[#054027]">Comp<span class="text-[#FA2D00]">Tour</span></h1><br>
+                <h1 class=" font-poppins laptop:text-3xl tablet:text-2xl mobile:text-xl font-bold text-[#054027]">Comp<span class="text-[#FA2D00]">Tour</span></h1><br>
                 
                 <div class="content-wrapper">
-                     <p class=" text-center laptop:text-xl tablet:text-base mobile:text-sm font-poppins">
+                     <p class=" text-center laptop:text-xl tablet:text-base mobile:text-sm">
                      CompTour adalah aplikasi yang berfungsi sebagai rekomendasi tempat pariwisata yang ada di indonesia dan memberikan edukasi mengenai budaya lokal daerah tempat tersebut.Indonesia Mempunyai kekayaan alam dan budaya yang luar biasa untuk menarik para wisatawan untuk berkunjung.Oleh karena itu Untuk membantu wisatawan untuk mendapatkan rekomendasi tempat yang harus dikunjungi, CompTour hadir bertujuan untuk merekomendasikan tempat wisata menarik di Indonesia berdasarkan lokasi wisata, objek wisata, dan informasi budaya lokal.Dengan adanya aplikasi ini, kami berharap dapat memberikan manfaat yang besar bagi wisatawan dalam merencanakan dan menikmati perjalanannya ke Indonesia dan dapat membantu mempromosikan keindahan alam dan budaya Indonesia serta meningkatkan kepuasan pengguna dan pengalaman wisata.
                     </p>
                 </div>
