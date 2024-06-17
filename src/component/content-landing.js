@@ -126,12 +126,16 @@ class contentLanding extends HTMLElement {
       .then((data) => {
         const images = data.data.slice(0, 4).map((item) => item.image);
         const names = data.data.slice(0, 4).map((item) => item.name_place);
+        const links = data.data
+          .slice(0, 4)
+          .map((item) => '/src/page/detail-search.html?taid=' + item.taid);
         const descriptions = data.data
           .slice(0, 4)
           .map((item) => item.description);
 
         const imgElements = this.shadowRoot.querySelectorAll("img");
         const nameElements = this.shadowRoot.querySelectorAll("h2");
+        const linksElements = this.shadowRoot.querySelectorAll("a");
         const descriptionElements = this.shadowRoot.querySelectorAll("p");
 
         imgElements.forEach((img, index) => {
@@ -141,6 +145,10 @@ class contentLanding extends HTMLElement {
 
         nameElements.forEach((name, index) => {
           name.textContent = names[index];
+        });
+
+        linksElements.forEach((link, index) => {
+          link.href = links[index];
         });
 
         descriptionElements.forEach((description, index) => {
