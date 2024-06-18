@@ -6,20 +6,9 @@ import "../component/profile-team.js";
 import "../component/content-galery.js";
 import "../component/content-comment.js";
 
-document.addEventListener("DOMContentLoaded", function () {
-  const drawerButton = document.querySelector(".app-bar__menu button");
-  const navigationDrawer = document.getElementById("navigationDrawer");
+const navToggle = document.querySelector(".nav-toggle");
+const navbar = document.querySelector(".nav-links");
 
-  drawerButton.addEventListener("click", function () {
-    navigationDrawer.classList.toggle("open");
-  });
-
-  document.addEventListener("click", function (event) {
-    if (
-      !navigationDrawer.contains(event.target) &&
-      event.target !== drawerButton
-    ) {
-      navigationDrawer.classList.remove("open");
-    }
-  });
+navToggle.addEventListener("click", () => {
+  navbar.classList.toggle("hidden");
 });
