@@ -20,9 +20,9 @@ class ContentAbout extends HTMLElement {
                     </p>
                 </div>
                 <div class="flex justify-center sm:justify-center md:justify-end">
-                    <a href="#" class="mt-8 inline-block rounded-xl bg-[#054027] px-8 py-2 text-sm font-medium 
+                    <a href="/src/assets/Buku-Panduan-CompTour.pdf" download="Buku-Panduan-CompTour.pdf" class="mt-8 inline-block rounded-xl bg-[#054027] px-8 py-2 text-sm font-medium 
                     text-white transition hover:bg-[#054027ec] focus:outline-none focus:ring focus:ring-[#FA2D00]">
-                        Book Guide
+                        Buku Panduan
                     </a>
                 </div>
             </div>
